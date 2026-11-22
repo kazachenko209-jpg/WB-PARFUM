@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Переход в Wildberries...</title>
+  <script>
+    (function() {
+      var webUrl = "https://www.wildberries.ru/catalog/2253076652/detail.aspx?size=4016850964";
+      var ua = navigator.userAgent || navigator.vendor || window.opera;
+
+      if (/android/i.test(ua)) {
+        window.location.replace("intent://www.wildberries.ru/catalog/2253076652/detail.aspx?size=4016850964#Intent;scheme=https;package=com.wildberries.ru;S.browser_fallback_url=" + encodeURIComponent(webUrl) + ";end");
+      } else {
+        window.location.replace(webUrl);
+      }
+    })();
+  </script>
+</head>
+<body>
+  <script>
+    setTimeout(function() {
+      window.location.href = "https://www.wildberries.ru/catalog/2253076652/detail.aspx?size=4016850964";
+    }, 300);
+  </script>
+</body>
+</html>
